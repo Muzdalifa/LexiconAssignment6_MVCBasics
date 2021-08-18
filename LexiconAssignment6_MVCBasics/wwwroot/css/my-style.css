@@ -1,0 +1,25 @@
+﻿body {
+    /*background-color:aquamarine;*/
+    width:80%;
+    margin:auto;
+}
+.custom-container {
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width:30px;
+    height:40px;
+    margin-left:50px;
+}
+
+.about-container {
+    width: 60%;
+    display: flex;
+}
+
+.photo {
+    margin-top: 50px;
+    height: 310px;
+    width: 300px;
+}
