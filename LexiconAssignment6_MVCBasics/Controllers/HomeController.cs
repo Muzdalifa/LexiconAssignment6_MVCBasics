@@ -25,11 +25,15 @@ namespace LexiconAssignment6_MVCBasics.Controllers
 
         public IActionResult Contact()
         {
+            ViewBag.Telehphone = "0700276515";
+            ViewBag.Email = "muzdalifa.ali@outlook.com";
+            ViewBag.LinkedIn = "https://www.linkedin.com/in/muzdalifa-ali/";
             return View();
         }
 
         public IActionResult Projects()
         {
+            ViewBag.Github = "https://github.com/Muzdalifa";
             return View();
         }
     }

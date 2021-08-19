@@ -1,9 +1,42 @@
 ﻿
 @{
     ViewData["Title"] = "Contact";
-    //Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="col">
-    <h1>Contact</h1>
+<div class="row about-container control-top-margin">
+    <div class="col">
+        <div class="card bg-light mb-3 mt-3">
+            <div class="card-header"><h1>Contact</h1></div>
+            <div class="card-body">
+                <table class="table-borderless">
+                    <tr>
+                        <td >
+                            <h5 class="card-title">Email : </h5>
+                        </td>
+                        <td> 
+                            <p class="card-text m-lg-2">@ViewBag.email</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5 class="card-title">Tel : </h5>
+                        </td>
+                        <td>
+                            <p class="card-text m-lg-2">@ViewBag.Telehphone</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h5 class="card-title">LinkedIn : </h5>
+                        </td>
+                        <td>
+                            <p class="card-text m-lg-2"><a href=@ViewBag.LinkedIn target="_blank" class="link"> Muzdalifa Ali</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>      
+    </div>
 </div>
+
+
