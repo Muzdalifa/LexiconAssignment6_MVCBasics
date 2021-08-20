@@ -36,6 +36,11 @@ namespace LexiconAssignment6_MVCBasics
             endpoints.MapControllerRoute(
                 name: "default",
                 pattern:"{controller=Home}/{action=About}/{id?}");
+            endpoints.MapControllerRoute(
+                    name: "customRoute",
+                    pattern: "custom",
+                    defaults: new { controller = "Doctor", action = "Index" }
+                    );
             });
         }
     }
