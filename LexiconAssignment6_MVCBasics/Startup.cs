@@ -16,6 +16,8 @@ namespace LexiconAssignment6_MVCBasics
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDistributedMemoryCache();
+            services.AddSession();
             services.AddControllersWithViews();
         }
 
@@ -29,6 +31,7 @@ namespace LexiconAssignment6_MVCBasics
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseSession();
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
@@ -40,6 +43,11 @@ namespace LexiconAssignment6_MVCBasics
                     name: "customRoute",
                     pattern: "custom",
                     defaults: new { controller = "Doctor", action = "Index" }
+                    );
+            endpoints.MapControllerRoute(
+                    name: "gameRoute",
+                    pattern: "custom",
+                    defaults: new { controller = "GuessingGame", action = "Index" }
                     );
             });
         }

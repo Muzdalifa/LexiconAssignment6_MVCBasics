@@ -1,0 +1,26 @@
+﻿@{ 
+    ViewBag.Title = "Index";
+}
+
+<div class="row about-container control-top-margin">
+    
+
+    <div class="mb-3">
+        <form asp-action="Index" method="post">
+            <h3>Welcome to Guessing number game</h3>
+            <p>We have number between 1 to 100, can you guess the number?</p>
+            <label name="userNumber" class="form-label m-lg-2">Enter your number to guess </label>
+            <input type="number" min="1" max="100" name="number" class="form-control m-lg-2">
+            <span><button type="submit" class="btn btn-secondary m-lg-2">Guess number</button></span>
+
+            <div class="row">
+                <div class="col">
+                    <p class="m-2 fw-bold fs-6">@ViewBag.Message</p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+</div>
