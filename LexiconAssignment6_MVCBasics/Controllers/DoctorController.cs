@@ -10,7 +10,7 @@ namespace LexiconAssignment6_MVCBasics.Controllers
     public class DoctorController : Controller
     {
         public IActionResult Index(float temperature)
-        {
+        {         
             if(temperature != 0)
             {
                 ViewBag.Message = Utility.CheckFever(temperature);

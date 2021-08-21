@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace LexiconAssignment6_MVCBasics.Models
 {
     public class Utility
-    {    
+    {  
         public float Temperature { get; set; }
         public string HighFever
         {

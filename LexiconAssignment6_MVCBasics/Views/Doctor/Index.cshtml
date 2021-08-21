@@ -7,12 +7,11 @@
     <div class="mb-3">
         <form asp-action="Index" method="post">
             <label name="temperature" class="form-label m-lg-2">Enter temperature </label>
-            <input type="number" step="any" name="temperature" class="form-control m-lg-2" placeholder="in celcius">
-            <span><button type="submit" class="btn btn-secondary m-lg-2">Submit</button></span>
+            <input type="text" name="temperature"  class="form-control m-lg-2" placeholder="in celcius">
+            <span><button type="submit" class="btn btn-secondary m-lg-2" >Submit</button></span>
         </form>
         
             <p class="m-2 fw-bold fs-6">@ViewBag.Message</p>
       
     </div>
 </div>
-
